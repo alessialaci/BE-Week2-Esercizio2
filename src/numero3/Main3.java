@@ -22,26 +22,26 @@ public class Main3 {
 
 			selezione = in.nextInt();
 			switch(selezione) {
-			case(0):
+				case(0):
+					break;
+				case(1):
+					r1.creaContatto();
+					break;
+				case(2):
+					r1.eliminaContatto();
+					break;
+				case(3):
+					r1.recuperaContattoDaTelefono();
+					break;
+				case(4):
+					r1.recuperaContattoDaNome();
 				break;
-			case(1):
-				r1.creaContatto();
+				case(5):
+					r1.stampaContatti();
 				break;
-			case(2):
-				r1.eliminaContatto();
-				break;
-			case(3):
-				r1.recuperaContattoDaTelefono();
-				break;
-			case(4):
-				r1.recuperaContattoDaNome();
-			break;
-			case(5):
-				r1.stampaContatti();
-			break;
-			default:
-				System.out.println("valore errato!");
-				break;
+				default:
+					System.out.println("valore errato!");
+					break;
 			}
 		} while(selezione != 0);
 

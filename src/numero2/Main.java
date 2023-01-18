@@ -16,7 +16,7 @@ public class Main {
         List<Integer> newList = duplicateAndReverseList(list);
         System.out.println("Nuova lista: " + newList);
 
-        boolean isEven = true;
+        boolean isEven = false;
         printListByIndex(newList, isEven);
 
 	}
@@ -48,7 +48,7 @@ public class Main {
         for (int i = 0; i < list.size(); i++) {
             if (isEven && i % 2 == 0) {
                 System.out.print(list.get(i) + " ");
-            } else if (!isEven && i % 2 != 0) {
+            } else {
                 System.out.print(list.get(i) + " ");
             }
         }
